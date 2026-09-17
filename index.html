@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Farmer Was Replaced</title>
+    <meta name="description" content="A farm-defense browser game where you recover crops and outpace replacement drones." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <div class="hud">
+        <div class="stat-panel"><span class="label">Harvest</span><strong id="score">0 / 8</strong></div>
+        <div class="stat-panel"><span class="label">Health</span><strong id="health">100</strong></div>
+        <div class="stat-panel"><span class="label">Time</span><strong id="timer">75</strong></div>
+      </div>
+      <div class="health-wrap"><div class="health-bar"><div id="healthFill" class="health-fill"></div></div></div>
+      <canvas id="gameCanvas" width="900" height="560" aria-label="The Farmer Was Replaced game"></canvas>
+      <div id="message" class="message visible">
+        <div class="panel-content">
+          <p class="eyebrow">Farm defense</p>
+          <h1>The Farmer Was Replaced</h1>
+          <p>Recover the field, gather the harvest, and reach the barn before the replacement drones take over.</p>
+          <div class="controls-grid"><span>Move: WASD / Arrows</span><span>Pulse: Space</span></div>
+          <button id="startButton">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
